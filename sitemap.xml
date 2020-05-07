@@ -3,5 +3,13 @@
      <loc>https://bellevue-university.github.io/dsc650/</loc>
      <lastmod>2020-05-07</lastmod>
      <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://bellevue-university.github.io/dsc650/data-sources/</loc>
+     <lastmod>2020-05-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://bellevue-university.github.io/dsc650/latency-numbers/</loc>
+     <lastmod>2020-05-07</lastmod>
+     <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -11,21 +11,23 @@
         <meta name="description" content="Big Data">
       
       
+        <link rel="canonical" href="https://bellevue-university.github.io/dsc650/latency-numbers/">
+      
       
         <meta name="author" content="Bellevue University">
       
-      <link rel="shortcut icon" href="/dsc650/assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.5">
     
     
       
-        <title>DSC 650</title>
+        <title>Latency Numbers - DSC 650</title>
       
     
     
-      <link rel="stylesheet" href="/dsc650/assets/stylesheets/main.df84b5fe.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.df84b5fe.min.css">
       
-        <link rel="stylesheet" href="/dsc650/assets/stylesheets/palette.8435c73a.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.8435c73a.min.css">
       
       
         
@@ -59,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#latency-numbers-every-data-scientist-should-know" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              
+              Latency Numbers
             
           </span>
         </div>
@@ -183,7 +190,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/dsc650/." title="Home" class="md-nav__link">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -195,7 +202,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/dsc650/data-sources/" title="Data Sources" class="md-nav__link">
+    <a href="../data-sources/" title="Data Sources" class="md-nav__link">
       Data Sources
     </a>
   </li>
@@ -205,11 +212,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="/dsc650/latency-numbers/" title="Latency Numbers" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Latency Numbers" class="md-nav__link md-nav__link--active">
       Latency Numbers
     </a>
+    
   </li>
 
     
@@ -220,12 +236,155 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                  <a href="https://github.com/bellevue-university/dsc650/edit/master/docs/latency-numbers.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="latency-numbers-every-data-scientist-should-know">Latency Numbers Every Data Scientist Should Know<a class="headerlink" href="#latency-numbers-every-data-scientist-should-know" title="Permanent link">&para;</a></h1>
+<p>In the 2000s, Jeff Dean, a Google Senior Fellow in their Research Group, <a href="http://highscalability.com/numbers-everyone-should-know">presented a list of latency numbers that every programmer should know</a>. These numbers describe how long it takes to perform certain actions within distributed programs. Since then, it has been <a href="http://highscalability.com/blog/2013/1/15/more-numbers-every-awesome-programmer-must-know.html">updated</a> and <a href="https://medium.com/@hondanhon/more-latency-numbers-every-programmer-should-know-3142f0cf614d">expanded upon</a>.  </p>
+<p>Below is yet another update on these numbers with data taken from <a href="https://github.com/colin-scott/interactive_latencies">Colin Scott</a>, a Berkeley researcher. An interactive version of this repository can be found <a href="https://colin-scott.github.io/personal_website/research/interactive_latency.html">here</a>.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="right"></th>
+<th align="right"></th>
+<th align="right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L1 cache reference</td>
+<td align="right">1 ns</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Branch mispredict</td>
+<td align="right">3 ns</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>L2 cache reference</td>
+<td align="right">4 ns</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Mutex lock/unlock</td>
+<td align="right">17 ns</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Main memory reference</td>
+<td align="right">100 ns</td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Compress 1KB with Zippy</td>
+<td align="right">2,000 ns</td>
+<td align="right">2 &mu;s</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Send 1KB over 1 Gbps network</td>
+<td align="right">10,000 ns</td>
+<td align="right">10 &mu;s</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>SSD random read</td>
+<td align="right">16,000 ns</td>
+<td align="right">16 &mu;s</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Read 1 MB sequentially from SSD</td>
+<td align="right">49,000 ns</td>
+<td align="right">49 &mu;s</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Read 1 MB sequentially from memory</td>
+<td align="right">250,000 ns</td>
+<td align="right">250 &mu;s</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Round trip within same datacenter</td>
+<td align="right">500,000 ns</td>
+<td align="right">500 &mu;s</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Read 1 MB sequentially from disk</td>
+<td align="right">825,000 ns</td>
+<td align="right">825 &mu;s</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Disk seek</td>
+<td align="right">2,000,000 ns</td>
+<td align="right">2,000 &mu;s</td>
+<td align="right">2 ms</td>
+</tr>
+<tr>
+<td>Send packet CA-&gt;Netherlands-&gt;CA</td>
+<td align="right">150,000,000 ns</td>
+<td align="right">150,000 &mu;s</td>
+<td align="right">150 ms</td>
+</tr>
+</tbody>
+</table>
+<p><em>Notes</em></p>
+<ul>
+<li>1 ns = 10<sup>-9</sup> seconds</li>
+<li>1 &mu;s = 10<sup>-6</sup> seconds = 1,000 ns</li>
+<li>1 ms = 10<sup>-3</sup> seconds = 1,000 &mu;s = 1,000,000 ns</li>
+</ul>
+                
+                  
+                    
 
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: May 7, 2020
+    
+  </small>
+</div>
+                  
+                
+              
               
                 
 
@@ -238,6 +397,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../data-sources/" title="Data Sources" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Data Sources
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -259,15 +439,15 @@
       
     </div>
     
-      <script src="/dsc650/assets/javascripts/vendor.83fe6e3c.min.js"></script>
-      <script src="/dsc650/assets/javascripts/bundle.7e1cb91c.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../assets/javascripts/vendor.83fe6e3c.min.js"></script>
+      <script src="../assets/javascripts/bundle.7e1cb91c.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "/dsc650/",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "/dsc650/assets/javascripts/worker/search.37585f48.min.js"
+            worker: "../assets/javascripts/worker/search.37585f48.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
