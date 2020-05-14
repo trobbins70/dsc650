@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://bellevue-university.github.io/dsc650/</loc>
-     <lastmod>2020-05-07</lastmod>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/data-sources/</loc>
-     <lastmod>2020-05-07</lastmod>
+     <loc>https://bellevue-university.github.io/dsc650/setup/windows/</loc>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/latency-numbers/</loc>
-     <lastmod>2020-05-07</lastmod>
+     <loc>https://bellevue-university.github.io/dsc650/setup/macOS/</loc>
+     <lastmod>2020-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://bellevue-university.github.io/dsc650/setup/ubuntu/</loc>
+     <lastmod>2020-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://bellevue-university.github.io/dsc650/lessons/fundamentals/latency-numbers/</loc>
+     <lastmod>2020-05-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://bellevue-university.github.io/dsc650/lessons/fundamentals/units/</loc>
+     <lastmod>2020-05-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
