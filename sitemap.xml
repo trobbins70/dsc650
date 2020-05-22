@@ -1,51 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://bellevue-university.github.io/dsc650/</loc>
-     <lastmod>2020-05-20</lastmod>
+     <lastmod>2020-05-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://bellevue-university.github.io/dsc650/setup/</loc>
+     <lastmod>2020-05-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://bellevue-university.github.io/dsc650/setup/windows/</loc>
-     <lastmod>2020-05-20</lastmod>
+     <lastmod>2020-05-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://bellevue-university.github.io/dsc650/setup/macOS/</loc>
-     <lastmod>2020-05-20</lastmod>
+     <lastmod>2020-05-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://bellevue-university.github.io/dsc650/setup/ubuntu/</loc>
-     <lastmod>2020-05-20</lastmod>
+     <lastmod>2020-05-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/lessons/fundamentals/latency-numbers/</loc>
-     <lastmod>2020-05-20</lastmod>
+     <loc>https://bellevue-university.github.io/dsc650/lessons/</loc>
+     <lastmod>2020-05-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/lessons/fundamentals/units/</loc>
-     <lastmod>2020-05-20</lastmod>
+     <loc>https://bellevue-university.github.io/dsc650/lessons/fundamentals/</loc>
+     <lastmod>2020-05-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/data/jester/</loc>
-     <lastmod>2020-05-20</lastmod>
+     <loc>https://bellevue-university.github.io/dsc650/lessons/fundamentals/latency/</loc>
+     <lastmod>2020-05-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/data/movielens/</loc>
-     <lastmod>2020-05-20</lastmod>
+     <loc>https://bellevue-university.github.io/dsc650/lessons/fundamentals/size/</loc>
+     <lastmod>2020-05-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/data/nytimes-covid/</loc>
-     <lastmod>2020-05-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/data/openflights/</loc>
-     <lastmod>2020-05-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/data/tidynomicon/</loc>
-     <lastmod>2020-05-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://bellevue-university.github.io/dsc650/data/wikilens/</loc>
-     <lastmod>2020-05-20</lastmod>
+     <loc>https://bellevue-university.github.io/dsc650/data/</loc>
+     <lastmod>2020-05-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
