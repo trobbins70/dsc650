@@ -9,44 +9,21 @@ visit_json = kvdb_dir.joinpath('visited.json')
 site_json = kvdb_dir.joinpath('sites.json')
 measurements_json = kvdb_dir.joinpath('measurements.json')
 
-
+from pathlib import Path
+import json
 class KVDB(object):
     def __init__(self, db_path):
         self._db_path = Path(db_path)
         self._db = {}
         self._load_db()
-
     def _load_db(self):
-        pass
-
+        if self._db_path.exists():
+            with open(self._db_path) as f:
+                self._db = json.load(f)
     def get_value(self, key):
-        pass
-
+        return self._db.get(key)
     def set_value(self, key, value):
-        pass
-
+        self._db[key] = value
     def save(self):
-        pass
-
-
-def create_sites_kvdb():
-    pass
-
-
-def create_people_kvdb():
-    pass
-
-
-def create_visits_kvdb():
-    pass
-
-
-def create_measurements_kvdb():
-    pass
-
-
-def main():
-    create_sites_kvdb()
-    create_people_kvdb()
-    create_visits_kvdb()
-    create_measurements_kvdb()
+        with open(self._db_path) as f:
+            json.dump(self._db, f, indent=2)
