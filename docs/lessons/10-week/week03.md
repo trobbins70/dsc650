@@ -20,7 +20,7 @@ After completing this week, you should be able to:
 
 ## Weekly Resources
 
-* [Apache Arrow][apache-arrow]
+* [ApacheApache Arrow][apache-arrow]
 * [Apache Parquet][apache-parquet]
 * [Apache Thrift][apache-thrift]
 * [Apache Avro][avro-docs]
