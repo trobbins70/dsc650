@@ -20,18 +20,12 @@ def read_jsonl_data():
 
 
 def validate_jsonl_data(records):
-    schema_path = SCHEMA_DIR.joinpath('routes-schema.json')
+    schema_path = SCHEMA_DIR.joinpath('routes-schema_RobbinsTimothy.json')
     with open(schema_path) as f:
         schema = json.load(f)
     for i, record in enumerate(records):
         validate(instance=record, schema=schema)
     # validation_csv_path = RESULTS_DIR.joinpath('validation-results.csv')
-
-
-
-def validate_jsonl_data(records):
-    schema_path = SCHEMA_DIR.joinpath('routes-schema.json')
-    validation_csv_path = RESULTS_DIR.joinpath('validation-results.csv')
 
 
 def create_avro_dataset(records):
@@ -86,10 +80,10 @@ def create_hash_dirs(records):
 
 def main():
     records = read_jsonl_data()
-    create_hash_dirs(records)
+#   create_hash_dirs(records)
     validate_jsonl_data(records)
     create_avro_dataset(records)
-    create_parquet_dataset(records)
+#   create_parquet_dataset(records)
     create_protobuf_dataset(records)
     validate_avro_dataset_v2()
 

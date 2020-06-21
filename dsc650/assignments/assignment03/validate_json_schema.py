@@ -14,7 +14,7 @@ def read_jsonl_data():
 
 
 def validate_jsonl_data(records):
-    schema_path = SCHEMA_DIR.joinpath('routes-schema.json')
+    schema_path = SCHEMA_DIR.joinpath('routes-schema_RobbinsTimothy.json')
     with open(schema_path) as f:
         schema = json.load(f)
     for i, record in enumerate(records):
