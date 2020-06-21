@@ -16,8 +16,17 @@ def read_jsonl_data():
     src_data_path = PROCESSED_DATA_DIR.joinpath('openflights').joinpath('routes.jsonl.gz')
     with gzip.open(src_data_path, 'rb') as f:
         records = [json.loads(line) for line in f.readlines()]
-
     return records
+
+
+def validate_jsonl_data(records):
+    schema_path = SCHEMA_DIR.joinpath('routes-schema.json')
+    with open(schema_path) as f:
+        schema = json.load(f)
+    for i, record in enumerate(records):
+        validate(instance=record, schema=schema)
+    # validation_csv_path = RESULTS_DIR.joinpath('validation-results.csv')
+
 
 
 def validate_jsonl_data(records):
